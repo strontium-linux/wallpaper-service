@@ -34,7 +34,7 @@ func IndexWallpapers() {
 			}
 
 			for _, wp := range subentries {
-				wallpapers[entry.Name()] = append(wallpapers[entry.Name()], wp.Name())
+				wallpapers[entry.Name()] = append(wallpapers[entry.Name()], filepath.Join(entry.Name(), wp.Name()))
 			}
 		} else {
 			log.Printf("remove %v from the wallpapers directory as it is not a directory", entry.Name())
