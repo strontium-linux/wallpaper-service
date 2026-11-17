@@ -1,3 +1,3 @@
 module wallpaper-service
 
-go 1.27.3
+go 1.26.0
